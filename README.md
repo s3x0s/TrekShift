@@ -133,13 +133,13 @@ Push Notify
 ## 📸 Screenshots
 
 ### Operator Dashboard
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](dashboard.png)
 
 ### AI Pivot Agent in Action
-![AI Pivot](screenshots/ai-pivot.png)
+![AI Pivot](ai-pivot.png)
 
 ### Geofenced Safety Map
-![Map](screenshots/ma.png)
+![Map](map.png)
 
 ### Customer Mobile Experience
 ![Mobile](mobile.png)
@@ -182,6 +182,8 @@ Run Development Server
 npm run dev
 ```
 Visit http://localhost:3000
+
+
 🚀 Usage
 For Operators
 Register your adventure tour company
@@ -195,11 +197,15 @@ Book your preferred trek/camping experience
 Receive real-time weather alerts via SMS/WhatsApp
 Choose from 3 AI-suggested safe alternatives
 Rebook with 1-click - zero refund hassle!
+
+
 📡 API Documentation
 Base URL
 ```
 https://sahyadrishield-152880807025.europe-west2.run.app/api
 ```
+
+
 Endpoints
 POST /pivot
 Trigger AI pivot agent for a booking
@@ -235,6 +241,8 @@ POST /bookings/:id/pivot/accept
 Accept pivot and rebook
 GET /operators/trust-scores
 Fetch operator trust score rankings
+
+
 🗄️ Database Schema
 Key Models
 ```prisma
@@ -269,6 +277,7 @@ model Booking {
   pivotHistory         Json      // JSONB audit log
 }
 ```
+
 📊 Analytics
 Metric
 Value
