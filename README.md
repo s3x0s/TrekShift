@@ -36,7 +36,7 @@
 - [Analytics](#-analytics)
 - [Team](#-team)
 - [Contributing](#-contributing)
-- [License](#-license)
+- [License](#license)
 
 ---
 
@@ -134,9 +134,6 @@ Push Notify
 
 ### Operator Dashboard
 ![Dashboard](dashboard.png)
-
-### AI Pivot Agent in Action
-![AI Pivot](ai-pivot.png)
 
 ### Geofenced Safety Map
 ![Map](map.png)
