@@ -25,18 +25,13 @@
 - [About](#-about)
 - [Features](#-features)
 - [Live Demo](#-live-demo)
-- [The Problem](#-the-problem)
 - [How It Works](#-how-it-works)
 - [Tech Stack](#-tech-stack)
 - [Screenshots](#-screenshots)
 - [Installation](#-installation)
 - [Usage](#-usage)
-- [API Documentation](#-api-documentation)
 - [Database Schema](#-database-schema)
 - [Analytics](#-analytics)
-- [Team](#-team)
-- [Contributing](#-contributing)
-- [License](#license)
 
 ---
 
