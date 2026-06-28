@@ -1,20 +1,10 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# 🏔️ PeakPivot: The Monsoon-Proof Adventure Marketplace
+### *AI-Driven Micro-Weather Protection & Rerouting for Maharashtra Tourism*
 
-# Run and deploy your AI Studio app
+[![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)]()
+[![Prisma](https://img.shields.io/badge/Prisma-PostgreSQL-blue?logo=prisma)]()
+[![Tailwind](https://img.shields.io/badge/Tailwind-CSS-38bdf8?logo=tailwindcss)]()
 
-This contains everything you need to run your app locally.
+**PeakPivot** transforms unpredictable monsoon weather from a business-killing crisis into a seamless marketplace pivot. When micro-cloudbursts threaten Sahyadri treks, our proprietary AI Agent instantly computes 3 geofenced, weather-proof alternatives. With 1-click rebooking, we protect operator trust scores, eliminate refund friction, and guarantee tourists safe, stunning adventures.
 
-View your app in AI Studio: https://ai.studio/apps/fcd06e91-68b5-44ba-bf38-83d27926e013
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+🌟 **Winner: Best Real-World Applicability & AI Innovation**
