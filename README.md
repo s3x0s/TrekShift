@@ -26,12 +26,8 @@
 - [Features](#-features)
 - [Live Demo](#-live-demo)
 - [How It Works](#-how-it-works)
-- [Tech Stack](#-tech-stack)
 - [Screenshots](#-screenshots)
 - [Installation](#-installation)
-- [Usage](#-usage)
-- [Database Schema](#-database-schema)
-- [Analytics](#-analytics)
 
 ---
 
