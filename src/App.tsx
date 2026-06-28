@@ -31,7 +31,7 @@ export default function App() {
   const [bookings, setBookings] = useState<Booking[]>([]);
   const [operators, setOperators] = useState<Operator[]>([]);
   const [selectedBookingId, setSelectedBookingId] = useState<string>("");
-  const [activeTab, setActiveTab] = useState<"dashboard" | "database" | "pitch">("dashboard");
+  const [activeTab, setActiveTab] = useState<"dashboard" | "database">("dashboard");
   const [prismaSchema, setPrismaSchema] = useState<string>("");
   const [loadingPivot, setLoadingPivot] = useState<boolean>(false);
   const [rebookingIndex, setRebookingIndex] = useState<number | null>(null);
@@ -193,17 +193,6 @@ export default function App() {
               <Layers className="w-4 h-4" />
               Database Schema
             </button>
-            <button
-              onClick={() => setActiveTab("pitch")}
-              className={`flex items-center gap-2 px-4 py-2 text-xs font-semibold rounded-lg transition-all ${
-                activeTab === "pitch"
-                  ? "bg-[#FFC107] text-[#1A1A1A] shadow-sm"
-                  : "text-gray-600 hover:text-[#1A1A1A]"
-              }`}
-            >
-              <Award className="w-4 h-4" />
-              Hackathon Pitch
-            </button>
           </div>
         </div>
       </header>
@@ -230,7 +219,7 @@ export default function App() {
           <div className="space-y-8">
             
             {/* HERO STATS GRID */}
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               
               {/* OPERATOR SAFETY TRUST SCORE CARD */}
               <div className="bg-white/90 backdrop-blur-md rounded-2xl border border-yellow-200/50 p-5 shadow-sm flex flex-col justify-between">
@@ -308,34 +297,6 @@ export default function App() {
                 <p className="text-[10px] text-gray-500 pt-2 border-t border-yellow-100">
                   🛡️ Eliminates chargebacks & credit disputes.
                 </p>
-              </div>
-
-              {/* QUICK STATISTICS */}
-              <div className="bg-[#FFC107] text-[#1A1A1A] rounded-2xl border border-yellow-400 p-5 shadow-md flex flex-col justify-between">
-                <div>
-                  <h3 className="text-sm font-extrabold uppercase tracking-wider opacity-85">Hackathon Analytics</h3>
-                  <div className="mt-4 grid grid-cols-2 gap-2">
-                    <div>
-                      <div className="text-2xl font-black">94%</div>
-                      <div className="text-[10px] font-bold opacity-80">Reroute Acceptance</div>
-                    </div>
-                    <div>
-                      <div className="text-2xl font-black">0%</div>
-                      <div className="text-[10px] font-bold opacity-80">Refund Losses</div>
-                    </div>
-                    <div className="mt-2">
-                      <div className="text-2xl font-black">1.8s</div>
-                      <div className="text-[10px] font-bold opacity-80">AI Generation</div>
-                    </div>
-                    <div className="mt-2">
-                      <div className="text-2xl font-black">4.9★</div>
-                      <div className="text-[10px] font-bold opacity-80">Operator Rating</div>
-                    </div>
-                  </div>
-                </div>
-                <div className="text-[11px] font-bold border-t border-amber-600/30 pt-2 mt-2">
-                  🛡️ TrekShift Active Guard
-                </div>
               </div>
             </div>
 
@@ -1111,93 +1072,7 @@ export default function App() {
           </div>
         )}
 
-        {/* HACKATHON PITCH TAB */}
-        {activeTab === "pitch" && (
-          <div className="bg-white/90 backdrop-blur-md rounded-2xl border border-yellow-200/50 p-8 shadow-sm space-y-8 max-w-4xl mx-auto">
-            
-            <div className="text-center space-y-2">
-              <div className="inline-block bg-[#FFC107] text-[#1A1A1A] text-xs font-black px-3.5 py-1.5 rounded-full uppercase tracking-widest border border-yellow-400">
-                The Winning 30-Second Elevator Pitch
-              </div>
-              <h2 className="text-3xl font-black text-[#1A1A1A] tracking-tight">
-                "Honorable Judges, this is TrekShift."
-              </h2>
-              <p className="text-xs text-gray-600 max-w-xl mx-auto">
-                Press the play icon to practice or present this pitch during the hackathon evaluation rounds!
-              </p>
-            </div>
 
-            {/* PITCH CARD */}
-            <div className="bg-gradient-to-r from-amber-50 to-yellow-50 border border-yellow-300 rounded-3xl p-6 md:p-8 shadow-inner text-center">
-              <p className="text-sm md:text-base font-extrabold text-[#1A1A1A] leading-relaxed italic">
-                "Every single monsoon weekend in Maharashtra, thousands of adventure tourism bookings get cancelled last minute due to unpredictable cloudbursts, washing away operator livelihoods and tourist plans. 
-                Our platform, <strong className="text-amber-800">TrekShift</strong>, transforms this crisis into a robust marketplace pivot. 
-                When weather alerts strike, our proprietary <strong className="text-[#D97706]">Monsoon-Proof AI Pivot Agent</strong> automatically scans micro-weather indices and instantly proposes 3 weather-proof local alternatives. 
-                With 1-click rebooking, we protect operator trust scores, completely eliminate refunds, and guarantee tourists safe, stunning Sahyadri memory loops instead of wet weekends at home!"
-              </p>
-            </div>
-
-            {/* CRITERIA CHECKLIST */}
-            <div className="space-y-4">
-              <h3 className="text-sm font-extrabold text-gray-800 text-center uppercase tracking-wider">
-                Judging Criteria Checklist We Satisfied
-              </h3>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                
-                <div className="border border-gray-100 rounded-2xl p-4 bg-white space-y-2">
-                  <div className="flex items-center gap-2">
-                    <span className="bg-[#FFC107] text-[#1A1A1A] text-[10px] font-extrabold px-2 py-0.5 rounded">20% Functionality</span>
-                    <h4 className="text-xs font-bold text-gray-800">Real-world Problem Solver</h4>
-                  </div>
-                  <p className="text-[11px] text-gray-500 leading-relaxed">
-                    Directly addresses Maharashtra adventure safety hazards. Keeps funds circulating inside the local rural operator economy instead of issuing massive payment cancellations.
-                  </p>
-                </div>
-
-                <div className="border border-gray-100 rounded-2xl p-4 bg-white space-y-2">
-                  <div className="flex items-center gap-2">
-                    <span className="bg-[#FFC107] text-[#1A1A1A] text-[10px] font-extrabold px-2 py-0.5 rounded">20% UI/UX</span>
-                    <h4 className="text-xs font-bold text-gray-800">Warm Amber Yellow Palette</h4>
-                  </div>
-                  <p className="text-[11px] text-gray-500 leading-relaxed">
-                    Designed using a high-contrast soft Marigold and Butter yellow visual canvas (#FDF6E3 / #FFF4CC) with elegant dark charcoal typography to guarantee premium aesthetics and high accessibility ratings.
-                  </p>
-                </div>
-
-                <div className="border border-gray-100 rounded-2xl p-4 bg-white space-y-2">
-                  <div className="flex items-center gap-2">
-                    <span className="bg-[#FFC107] text-[#1A1A1A] text-[10px] font-extrabold px-2 py-0.5 rounded">15% Innovation</span>
-                    <h4 className="text-xs font-bold text-gray-800">The Monsoon-Proof AI Agent</h4>
-                  </div>
-                  <p className="text-[11px] text-gray-500 leading-relaxed">
-                    Utilizes server-side Gemini 3.5 Flash capabilities with deterministic JSON schemas to yield safe, micro-geographical, weather-proof alternative route recommendations inside Maharashtra.
-                  </p>
-                </div>
-
-                <div className="border border-gray-100 rounded-2xl p-4 bg-white space-y-2">
-                  <div className="flex items-center gap-2">
-                    <span className="bg-[#FFC107] text-[#1A1A1A] text-[10px] font-extrabold px-2 py-0.5 rounded">20% Technical Depth</span>
-                    <h4 className="text-xs font-bold text-gray-800">Full-Stack Cloud Run Applet</h4>
-                  </div>
-                  <p className="text-[11px] text-gray-500 leading-relaxed">
-                    Powered by a robust Express + Vite full-stack framework with complete state-preservations, local weather simulators, and standard database architecture representations.
-                  </p>
-                </div>
-
-              </div>
-            </div>
-
-            {/* PITCH CALL TO ACTION */}
-            <div className="bg-[#1A1A1A] text-white p-6 rounded-2xl text-center space-y-2">
-              <h4 className="text-sm font-extrabold text-[#FFC107]">Ready to Pitch at AI Studio Hackathon!</h4>
-              <p className="text-xs text-gray-400">
-                Deploy this live applet. Open in a new tab, present the dynamic weather simulation, click "Query AI Pivot Agent" live in front of the jury, and secure first prize!
-              </p>
-            </div>
-
-          </div>
-        )}
 
       </main>
 
