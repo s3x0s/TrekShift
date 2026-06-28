@@ -3,13 +3,20 @@
 ### *AI-Driven Micro-Weather Protection & Rerouting for Maharashtra Tourism*
 
 <p align="center">
-  <img src="logo.img" />" alt="TrekShift Logo" width="600"/>
-  
+  <img src="logo.png" alt="TrekShift Logo" width="600"/>
 </p>
 
 <p align="center">
   <strong>Adventure Intelligent Simplified</strong>
 </p>
+
+## 📸 Screenshots
+
+### Operator Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### AI Pivot in Action
+![AI Pivot](screenshots/ai-pivot.png)
 
 <p align="center">
   <a href="https://sahyadrishield-152880807025.europe-west2.run.app/">
