@@ -139,10 +139,10 @@ Push Notify
 ![AI Pivot](screenshots/ai-pivot.png)
 
 ### Geofenced Safety Map
-![Map](screenshots/map.png)
+![Map](screenshots/ma.png)
 
 ### Customer Mobile Experience
-![Mobile](screenshots/mobile.png)
+![Mobile](mobile.png)
 
 ---
 
