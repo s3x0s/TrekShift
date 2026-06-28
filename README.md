@@ -3,7 +3,9 @@
 ### *AI-Driven Micro-Weather Protection & Rerouting for Maharashtra Tourism*
 
 <p align="center">
-  <img src="logo.png" alt="TrekShift Logo" width="600"/>
+  <img src="<img width="1294" height="832" alt="Gemini_Generated_Image_vk054ovk054ovk05" src="https://github.com/user-attachments/assets/ca265564-6681-421f-84ad-796fe535371a" />
+" alt="TrekShift Logo" width="600"/>
+  
 </p>
 
 <p align="center">
@@ -157,7 +159,7 @@ Push Notify
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/yourusername/trekshift.git
+git clone https://github.com/s3x0s/trekshift.git
 cd trekshift
 ```
 Install Dependencies
@@ -271,16 +273,15 @@ model Booking {
 
 📊 Analytics
 ```
-Metric
-Value
-Reroute Acceptance
-94%
-Refund Losses
-0%
-AI Generation Time
-1.8s
-Operator Rating
-4.9★
+Metric Value
+
+Reroute Acceptance: 94%
+
+Refund Losses: 0%
+
+AI Generation Time: 1.8s
+
+
 ```
 👥 Team
 Built for Maharashtra Tourism Hackathon 2026
