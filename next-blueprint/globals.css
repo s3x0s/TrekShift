@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 48 100% 97%; /* #FFFDF0 soft butter yellow */
+  --foreground: 0 0% 10%; /* #1A1A1A */
+  --primary: 45 100% 51%; /* #FFC107 vibrant marigold */
+  --primary-foreground: 0 0% 10%;
+}
+
+body {
+  background-color: rgb(255, 253, 240);
+  background-image: radial-gradient(at 0% 0%, hsla(48,100%,94%,1) 0, transparent 50%),
+                    radial-gradient(at 50% 100%, hsla(45,100%,90%,1) 0, transparent 50%);
+  color: rgb(26, 26, 26);
+}

@@ -1,0 +1,48 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id        String    @id @default(uuid())
+  name      String
+  email     String    @unique
+  phone     String
+  bookings  Booking[]
+}
+
+model Operator {
+  id                 String    @id @default(uuid())
+  name               String
+  tourCompany        String
+  trustScore         Int       @default(80) 
+  verified           Boolean   @default(false)
+  completedTours     Int       @default(0)
+  bookings           Booking[]
+}
+
+model TripItinerary {
+  id                        String    @id @default(uuid())
+  originalTrekName          String
+  region                    String
+  weather_dependency_status String    
+  originalDurationHours     Int
+  description               String
+}
+
+model Booking {
+  id                   String    @id @default(uuid())
+  userId               String
+  user                 User      @relation(fields: [userId], references: [id])
+  operatorId           String
+  operator             Operator  @relation(fields: [operatorId], references: [id])
+  originalItineraryName String
+  bookingDate          String
+  status               String    // CONFIRMED, WEATHER_ALERT, PIVOT_PROPOSED, PIVOTED
+  weatherStatus        String    // SUNNY, LIGHT_RAIN, HEAVY_STORM
+  pivotHistory         Json      // JSONB log of triggers
+}

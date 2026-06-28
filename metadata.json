@@ -1,0 +1,6 @@
+{
+  "name": "TrekShift",
+  "description": "Monsoon-Proof AI Pivot Agent for Maharashtra Adventure Tourism.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
