@@ -3,8 +3,7 @@
 ### *AI-Driven Micro-Weather Protection & Rerouting for Maharashtra Tourism*
 
 <p align="center">
-  <img src="<img width="1294" height="832" alt="Gemini_Generated_Image_vk054ovk054ovk05" src="https://github.com/user-attachments/assets/ca265564-6681-421f-84ad-796fe535371a" />
-" alt="TrekShift Logo" width="600"/>
+  <img src="logo.img" />" alt="TrekShift Logo" width="600"/>
   
 </p>
 
