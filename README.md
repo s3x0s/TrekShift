@@ -54,9 +54,11 @@ When micro-cloudbursts threaten Sahyadri treks, our proprietary **Monsoon-Proof 
 
 ## 🌐 Live Demo
 
-**Visit our live application:** [https://sahyadrishield-152880807025.europe-west2.run.app/](https://sahyadrishield-152880807025.europe-west2.run.app/)
+🚀 **Try TrekShift Live:**  
+[Explore the Live Application](https://sahyadrishield-152880807025.europe-west2.run.app/)
 
-**YouTube Demo:** [https://youtu.be/e8R0E5himz8?si=tpWauilI-66O7efa](https://youtu.be/e8R0E5himz8?si=tpWauilI-66O7efa)
+🎥 **Watch the Project Demo:**  
+[View the YouTube Demonstration](https://youtu.be/e8R0E5himz8?si=tpWauilI-66O7efa)
 ---
 
 ## ⚠️ The Problem
