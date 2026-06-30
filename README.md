@@ -1,7 +1,7 @@
 # 🏔️ TrekShift: The Monsoon-Proof Adventure Marketplace
 
 <p align="center">
-  <img src="Logo.png" alt="TrekShift Logo Logo" width="600"/>
+  <img src="logo1.png" alt="TrekShift Logo Logo" width="600"/>
 
 <p align="center">
   <strong>Adventure Intelligent Simplified</strong>
